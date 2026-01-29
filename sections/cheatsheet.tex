@@ -1,0 +1,17 @@
+\appendix
+\chapter{Exam Quick Reference}
+
+\section{Bitwise Cheat Sheet}
+\begin{itemize}
+    \item \textbf{Set Bit 3:} \texttt{REG |= (1 << 3);}
+    \item \textbf{Clear Bit 3:} \texttt{REG \&= \textasciitilde(1 << 3);}
+    \item \textbf{Toggle Bit 3:} \texttt{REG \textasciicircum= (1 << 3);}
+    \item \textbf{Check Bit 3:} \texttt{if (REG \& (1 << 3))}
+\end{itemize}
+
+\section{Common Register Maps}
+% You can paste your most used memory addresses here
+\begin{lstlisting}[language=C]
+#define GPIOA_MODER  (*((volatile uint32_t *) 0x48000000))
+#define RCC_AHB1ENR  (*((volatile uint32_t *) 0x40023830))
+\end{lstlisting}

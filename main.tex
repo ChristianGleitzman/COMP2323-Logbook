@@ -18,6 +18,15 @@
 \lfoot{Christian Gleitzman}
 \rfoot{Page \thepage}
 
+% --- Custom Boxes for Important Notes ---
+\usepackage{tcolorbox}
+\newtcolorbox{examwarning}{
+  colback=red!5!white,
+  colframe=red!75!black,
+  title=EXAM NOTE,
+  fonttitle=\bfseries
+}
+
 % --- Graphics & floats ---
 \usepackage{graphicx}
 \usepackage{float}     % For precise image placement [H]
@@ -54,6 +63,16 @@
     rulecolor=\color{black}
 }
 \lstset{style=mystyle}
+
+% --- Custom Titles ---
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Huge} % Removes "Chapter N" line
+\titlespacing*{\chapter}{0pt}{-50pt}{20pt} % Reduces white space at top of page
+
+% --- Graphics Path ---
+% LaTeX will look in these folders automatically
+\graphicspath{ {./assets/} {./images/} }
 
 % --- Hyperlinks (Must be last) ---
 \usepackage{hyperref}
@@ -94,4 +113,5 @@
 \input{sections/week01.tex}
 % \input{sections/week02.tex}
 
+\input{sections/cheatsheet.tex}
 \end{document}

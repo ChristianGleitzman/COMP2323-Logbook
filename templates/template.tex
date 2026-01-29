@@ -1,18 +1,20 @@
-% sections/week01.tex
+\chapter{Week [X]: [Topic, e.g., Timers]}
 
-% CHANGE 1: Use \chapter instead of \section* % This puts "Week 1" in the Table of Contents and starts a new page.
-\chapter{Week 1 - Example}
-\label{ch:week1}
+% 1. THE "HOW-TO" (Summary of the mechanism)
+\section*{Quick Concept}
+To use the Timer:
+1. Enable APB1 Clock.
+2. Set Prescaler (PSC).
+3. Set Auto-Reload (ARR).
+4. Enable Counter (CEN).
 
-\section{Task Outline}
-This section can be used to describe the task or assignment for the week. For example, implementing a simple LED driver in C.
+% 2. THE CODE (Your proven solution)
+\section*{Reference Implementation}
+\lstinputlisting[language=C, caption={Timer Init Code}]{src/week-[X]/timer.c}
 
-\section{Implementation}
-Below is some example code that demonstrates how to embed C code in LaTeX using the listings package.
-
-% Import the C code
-% Ensure the path matches your actual file structure
-\lstinputlisting[language=C, caption={Example Code Snippet}]{src/week-01/example.c}
-
-\section{Reflections from Solution}
-This is an example reflection section where text can be added to discuss the implementation, challenges faced, and lessons learned during the task.
+% 3. EXAM NOTES (The "Gotchas")
+\section*{Exam Pitfalls}
+\begin{examwarning}
+    * The timer clock is usually HALF the system clock (APB1).
+    * Don't forget to clear the Update Interrupt Flag (UIF) in the ISR!
+\end{examwarning}
