@@ -1,0 +1,97 @@
+\documentclass[11pt, a4paper]{report}
+
+% --- Typography & Geometry ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo} % Palatino font (professional & readable)
+\usepackage[scaled=0.95]{helvet} % Helvetica for sans-serif
+\usepackage{geometry}
+\geometry{margin=1in, headheight=14pt}
+\usepackage{parskip} % Nice spacing between paragraphs
+
+% --- Professional Headers ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{COMP2323: Computer Systems II}}
+\rhead{Engineering Logbook}
+\lfoot{Christian Gleitzman}
+\rfoot{Page \thepage}
+
+% --- Graphics & floats ---
+\usepackage{graphicx}
+\usepackage{float}     % For precise image placement [H]
+\usepackage{caption}   % Better caption formatting
+\usepackage{subcaption}
+
+% --- Code Highlighting (Your existing setup, refined) ---
+\usepackage{xcolor}
+\usepackage{listings}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.96,0.96,0.96} % Slightly cleaner gray
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta}\bfseries, % Bold keywords
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=8pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=4,
+    frame=lines, % Clean lines top/bottom instead of full box
+    rulecolor=\color{black}
+}
+\lstset{style=mystyle}
+
+% --- Hyperlinks (Must be last) ---
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black, % Black links for TOC look professional
+    urlcolor=blue,
+    pdftitle={COMP2323 Logbook},
+    pdfauthor={Christian Gleitzman}
+}
+
+% --- DOCUMENT START ---
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\scshape\LARGE University of Southampton \par}
+    \vspace{1cm}
+    {\scshape\Large COMP2323 \par}
+    \vspace{1.5cm}
+    {\huge\bfseries Computer Systems II Logbook \par}
+    \vspace{0.5cm}
+    {\Large Semester 2, 2026 \par}
+    \vspace{2cm}
+    {\Large\itshape Christian Gleitzman \par}
+    \vfill
+    \includegraphics[width=0.4\textwidth]{university-of-southampton.png}
+    \vfill
+    {\large \today \par}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% --- Content ---
+\input{sections/week01.tex}
+% \input{sections/week02.tex}
+
+\end{document}
