@@ -1,4 +1,4 @@
-\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Week 1 - Example}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Task Outline}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Implementation}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Reflections}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Reflections from Solution}{2}{section.1.3}%
