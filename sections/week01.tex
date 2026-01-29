@@ -1,15 +1,20 @@
-\section*{Week 1: Example Task}
+% sections/week01.tex
 
-\subsection*{1. Task Outline}
-The goal was to toggle an LED using direct register access. 
+% CHANGE 1: Use \chapter instead of \section* % This puts "Week 1" in the Table of Contents and starts a new page.
+\chapter{Introduction}
+\label{ch:week1}
+
+\section{Task Outline}
+The goal was to toggle an LED using direct register access.
 I chose a polling architecture for simplicity, though this blocks the CPU.
 
-\subsection*{2. Implementation}
-Below is the driver code. Note how I used bitwise operators to preserve the state of other pins.
+\section{Implementation}
+Below is some example code that demonstrates how to embed C code in LaTeX using the listings package.
 
-% THE NATIVE IMPORT COMMAND
-% syntax: \lstinputlisting[language=C, caption={Optional Caption}]{path/to/file}
-\lstinputlisting[language=C, caption={Example Code Block}]{src/week-01/example.c}
+% Import the C code
+% Ensure the path matches your actual file structure
+\lstinputlisting[language=C, caption={LED Driver Code}]{src/week-01/example.c}
 
-\subsection*{3. Reflections based on solutions provided}
-Direct memory access is faster but riskier than using an abstraction layer...
+\section{Reflections}
+Direct memory access is faster but riskier than using an abstraction layer. 
+In the future, I would wrap this in a macro to improve readability.
