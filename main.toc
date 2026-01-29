@@ -1,4 +1,0 @@
-\contentsline {chapter}{\numberline {1}Week [X]: [Topic, e.g., Timers]}{2}{chapter.1}%
-\contentsline {chapter}{\numberline {A}Exam Quick Reference}{3}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Bitwise Cheat Sheet}{3}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Common Register Maps}{3}{section.A.2}%

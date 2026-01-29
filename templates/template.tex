@@ -1,20 +1,42 @@
-\chapter{Week [X]: [Topic, e.g., Timers]}
+\chapter{Week X: Example Topic}
+\label{ch:week[X]}
 
-% 1. THE "HOW-TO" (Summary of the mechanism)
-\section*{Quick Concept}
-To use the Timer:
-1. Enable APB1 Clock.
-2. Set Prescaler (PSC).
-3. Set Auto-Reload (ARR).
-4. Enable Counter (CEN).
+% 1. SPECIFICATION (The "Why" & "How")
+\section{Task Outline}
 
-% 2. THE CODE (Your proven solution)
-\section*{Reference Implementation}
-\lstinputlisting[language=C, caption={Timer Init Code}]{src/week-[X]/timer.c}
+\textbf{Objective:} [e.g., Sampling the potentiometer at 10kHz.]
 
-% 3. EXAM NOTES (The "Gotchas")
-\section*{Exam Pitfalls}
-\begin{examwarning}
-    * The timer clock is usually HALF the system clock (APB1).
-    * Don't forget to clear the Update Interrupt Flag (UIF) in the ISR!
-\end{examwarning}
+% This box forces you to justify your architecture RIGOROUSLY.
+% Useful for the exam conceptual questions.
+\begin{specbox}{Design Decision}
+    [Explain your choice here. e.g.:]
+    \begin{itemize}
+        \item \textbf{Selected Mode:} Circular Buffer DMA.
+        \item \textbf{Justification:} Polling would consume 100\% CPU at this sample rate. DMA allows the CPU to sleep, reducing power.
+    \end{itemize}
+\end{specbox}
+
+% 2. IMPLEMENTATION (The Code)
+\section{Implementation}
+[Brief note on register setup, e.g., "ADC1 is triggered by TIM3 TRGO event."]
+
+\lstinputlisting[language=C, caption={Register-Level Driver}]{src/week-01/example.c}
+
+% 3. VERIFICATION (The "Exam Cheat Sheet")
+\section{Verification \& Constraints}
+
+% Example figure (Logic Analyzer/Oscilloscope)
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth, draft]{placeholder_trace.png}
+    \caption{Logic analyzer trace showing 100us sample interval.}
+\end{figure}
+
+% The "Save My Skin" Box for the Exam
+\begin{alertbox}
+    \begin{itemize}
+        \item \textbf{Bug Found:} The ADC value drifted when WiFi was enabled.
+        \item \textbf{Fix:} Added a 0.1uF decoupling capacitor to the VREF pin.
+        \item \textbf{Constraint:} Maximum sampling frequency is 2.4 MSPS on this bus.
+    \end{itemize}
+\end{alertbox}

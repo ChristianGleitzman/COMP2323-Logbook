@@ -20,11 +20,21 @@
 
 % --- Custom Boxes for Important Notes ---
 \usepackage{tcolorbox}
-\newtcolorbox{examwarning}{
+
+% Use this for the rigorous "Why" (Architecture/Logic)
+\newtcolorbox{specbox}[1]{
+  colback=blue!5!white,
+  colframe=blue!75!black,
+  fonttitle=\bfseries,
+  title=#1
+}
+
+% Use this for "Gotchas," Bugs, and Timing Constraints (Exam Gold)
+\newtcolorbox{alertbox}{
   colback=red!5!white,
   colframe=red!75!black,
-  title=EXAM NOTE,
-  fonttitle=\bfseries
+  fonttitle=\bfseries,
+  title=Note for Exam
 }
 
 % --- Graphics & floats ---
