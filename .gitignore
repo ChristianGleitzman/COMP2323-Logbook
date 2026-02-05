@@ -1,0 +1,26 @@
+# Ignore Build Artifacts
+build/
+*.uf2
+*.elf
+*.bin
+*.hex
+*.map
+
+# Ignore System Files
+.DS_Store
+*.swp
+
+# Ignore IDE specific settings (Optional, but good practice)
+.vscode/
+
+# --- LaTeX Build Artifacts ---
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.xdv
+*.bbl
+*.blg
