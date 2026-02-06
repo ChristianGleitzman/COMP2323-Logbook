@@ -1,6 +1,6 @@
-PWD c:\Users\chris\OneDrive - University of Southampton\y2\COMP2323-Logbook
+PWD c:\Users\chris\uni-work\y2\COMP2323-Logbook
 INPUT C:\Users\chris\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\chris\OneDrive - University of Southampton\y2\COMP2323-Logbook\main.tex
+INPUT c:\Users\chris\uni-work\y2\COMP2323-Logbook\main.tex
 OUTPUT main.log
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
@@ -355,6 +355,12 @@ INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr
 INPUT .\sections\cheatsheet.tex
 INPUT .\sections\cheatsheet.tex
 INPUT sections\cheatsheet.tex
+INPUT .\images\operator-precedence.png
+INPUT .\images\operator-precedence.png
+INPUT .\images\operator-precedence.png
+INPUT .\images\operator-precedence.png
+INPUT .\images\operator-precedence.png
+INPUT .\images\operator-precedence.png
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out

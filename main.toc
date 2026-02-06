@@ -1,7 +1,8 @@
 \contentsline {chapter}{\numberline {1}Week X: Example Topic}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Task Outline}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Implementation}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Verification \& Constraints}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Outcomes}{3}{section.1.3}%
 \contentsline {chapter}{\numberline {A}Exam Quick Reference}{4}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Bitwise Cheat Sheet}{4}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Common Register Maps}{4}{section.A.2}%
+\contentsline {section}{\numberline {A.1}C Operator Precedence}{4}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Bitwise Cheat Sheet}{4}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Common Register Maps}{4}{section.A.3}%

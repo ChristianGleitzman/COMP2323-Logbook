@@ -1,6 +1,25 @@
 \appendix
 \chapter{Exam Quick Reference}
 
+\section{C Operator Precedence}
+
+% The [H] specifier forces the image to stay here (requires \usepackage{float})
+\begin{figure}[H]
+    \centering
+    % Ensure 'operator_precedence.png' is inside your 'images/' folder
+    \includegraphics[width=0.95\textwidth]{operator-precedence.png} 
+    \caption{C Operator Precedence and Associativity Table. (Note: Unary operators (right-to-left) bind tighter than arithmetic.)}
+    \label{fig:operator_precedence}
+\end{figure}
+
+\begin{specbox}{Exam Reminder: Associativity}
+    Remember that assignment operators (\texttt{=, +=, -=}) associate \textbf{Right-to-Left}.
+    \begin{itemize}
+        \item \texttt{a = b = c = 0;} is valid and executes as \texttt{a = (b = (c = 0));}
+        \item \texttt{a / b / c} executes as \texttt{(a / b) / c} (Left-to-Right).
+    \end{itemize}
+\end{specbox}
+
 \section{Bitwise Cheat Sheet}
 \begin{itemize}
     \item \textbf{Set Bit 3:} \texttt{REG |= (1 << 3);}
